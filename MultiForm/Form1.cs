@@ -12,6 +12,8 @@ namespace MultiForm
 {
     public partial class Form1 : Form
     {
+        frmTwo two;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,8 +21,19 @@ namespace MultiForm
 
         private void btnShowForm_Click(object sender, EventArgs e)
         {
-            frmTwo two = new frmTwo();
-            two.ShowDialog();
+            two = new frmTwo();
+            two.lblShare.Text = txtShared.Text;
+            two.Show();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            this.BackColor = Color.LightGreen;
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            this.BackColor= Color.Red;
         }
     }
 }

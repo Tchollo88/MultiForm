@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnShowForm = new System.Windows.Forms.Button();
+            this.txtShared = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnShowForm
@@ -41,21 +42,33 @@
             this.btnShowForm.UseVisualStyleBackColor = true;
             this.btnShowForm.Click += new System.EventHandler(this.btnShowForm_Click);
             // 
+            // txtShared
+            // 
+            this.txtShared.Location = new System.Drawing.Point(73, 98);
+            this.txtShared.Name = "txtShared";
+            this.txtShared.Size = new System.Drawing.Size(139, 20);
+            this.txtShared.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 116);
+            this.ClientSize = new System.Drawing.Size(258, 179);
+            this.Controls.Add(this.txtShared);
             this.Controls.Add(this.btnShowForm);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnShowForm;
+        public System.Windows.Forms.TextBox txtShared;
     }
 }
 
