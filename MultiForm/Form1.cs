@@ -20,7 +20,7 @@ namespace MultiForm
         private void btnShowForm_Click(object sender, EventArgs e)
         {
             frmTwo two = new frmTwo();
-            two.Show();
+            two.ShowDialog();
         }
     }
 }
