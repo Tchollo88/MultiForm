@@ -1,6 +1,6 @@
 ﻿namespace MultiForm
 {
-    partial class Form1
+    partial class frmTwo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnShowForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnShowForm
-            // 
-            this.btnShowForm.Location = new System.Drawing.Point(81, 38);
-            this.btnShowForm.Name = "btnShowForm";
-            this.btnShowForm.Size = new System.Drawing.Size(86, 32);
-            this.btnShowForm.TabIndex = 0;
-            this.btnShowForm.Text = "Show Form";
-            this.btnShowForm.UseVisualStyleBackColor = true;
-            this.btnShowForm.Click += new System.EventHandler(this.btnShowForm_Click);
-            // 
-            // Form1
+            // frmTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 116);
-            this.Controls.Add(this.btnShowForm);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(444, 253);
+            this.Name = "frmTwo";
+            this.Text = "frmTwo";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnShowForm;
     }
 }
-

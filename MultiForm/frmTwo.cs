@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace MultiForm
 {
-    public partial class Form1 : Form
+    public partial class frmTwo : Form
     {
-        public Form1()
+        public frmTwo()
         {
             InitializeComponent();
-        }
-
-        private void btnShowForm_Click(object sender, EventArgs e)
-        {
-            frmTwo two = new frmTwo();
-            two.Show();
         }
     }
 }
